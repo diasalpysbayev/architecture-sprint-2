@@ -20,3 +20,10 @@ docker exec -it mongos_router mongosh --port 27023
 use somedb
 db.helloDoc.countDocuments() 
 ```
+
+## Чтобы посмотреть общее количество реплик
+```shell
+docker exec -it mongodb2 mongosh
+rs.conf();
+exit();
+```
